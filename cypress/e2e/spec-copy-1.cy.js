@@ -24,7 +24,7 @@ describe('JSONPlaceholder API Tests', () => {
       });
   });
 
-  it('should fetch and verify todos', () => {
+  it('should fetch and verify todos data', () => {
     cy.request('GET', 'https://jsonplaceholder.typicode.com/todos')
       .then((response) => {
         expect(response.status).to.eq(200);
